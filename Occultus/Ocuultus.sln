@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{842CFF28-DAE6-94C5-AB74-5267D8F8C5F0}") = "Ocuultus", "Assembly-CSharp.csproj", "{77CC82AF-1B15-8A89-B457-33C8EF912ED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77CC82AF-1B15-8A89-B457-33C8EF912ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CC82AF-1B15-8A89-B457-33C8EF912ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CC82AF-1B15-8A89-B457-33C8EF912ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CC82AF-1B15-8A89-B457-33C8EF912ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
