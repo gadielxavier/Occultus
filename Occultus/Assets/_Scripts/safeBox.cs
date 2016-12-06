@@ -8,7 +8,8 @@ public class safeBox : MonoBehaviour {
 	{
 		transform.Find("front door").GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Specular");
 		if(Input.GetMouseButtonDown(0)){
-			
+			GlobalVariables.playerPosition = GameObject.Find ("Player").transform.position;
+			GlobalVariables.cameraRotation = GameObject.Find ("Main Camera").transform.rotation.eulerAngles;
 			SceneManager.LoadScene ("safebox");
 		}
 

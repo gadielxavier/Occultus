@@ -15,7 +15,6 @@ public class InputText : MonoBehaviour {
 
 	void Update(){
 		if(Input.GetMouseButtonDown(1)){
-			GlobalVariables.playerPosition = new Vector3 (20, 2.5f, -15);
 			SceneManager.LoadScene ("house");
 		}
 	}

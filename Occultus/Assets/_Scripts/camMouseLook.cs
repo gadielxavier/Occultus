@@ -12,7 +12,9 @@ public class camMouseLook : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		smoothV.x = GlobalVariables.cameraRotation.y;
 		character = this.transform.parent.gameObject;
+
 	}
 	
 	// Update is called once per frame
