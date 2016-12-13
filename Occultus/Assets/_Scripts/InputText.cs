@@ -29,6 +29,7 @@ public class InputText : MonoBehaviour {
 
 	public void validadeInputText(){
 		if(GetComponentInChildren<Text> ().text.Equals(" 311")){
+			GlobalVariables.isSafeBoxOpen = true;
 			if (OnClicked != null)
 				OnClicked ();
 		}

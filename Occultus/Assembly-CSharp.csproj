@@ -49,7 +49,6 @@
      <Compile Include="Assets\_Scripts\Door.cs" />
      <Compile Include="Assets\_Scripts\GlobalVariables.cs" />
      <Compile Include="Assets\_Scripts\InputText.cs" />
-     <Compile Include="Assets\_Scripts\TurnColorScript.cs" />
      <Compile Include="Assets\_Scripts\camMouseLook.cs" />
      <Compile Include="Assets\_Scripts\playerController.cs" />
      <Compile Include="Assets\_Scripts\safeBox.cs" />
