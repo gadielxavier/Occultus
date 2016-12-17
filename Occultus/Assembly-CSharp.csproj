@@ -48,7 +48,9 @@
      <Compile Include="Assets\Downloads\Keypad\Script\Playsound.cs" />
      <Compile Include="Assets\_Scripts\Door.cs" />
      <Compile Include="Assets\_Scripts\GlobalVariables.cs" />
+     <Compile Include="Assets\_Scripts\HighLightObject.cs" />
      <Compile Include="Assets\_Scripts\InputText.cs" />
+     <Compile Include="Assets\_Scripts\Pause.cs" />
      <Compile Include="Assets\_Scripts\camMouseLook.cs" />
      <Compile Include="Assets\_Scripts\playerController.cs" />
      <Compile Include="Assets\_Scripts\safeBox.cs" />

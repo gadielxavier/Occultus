@@ -11,6 +11,7 @@ public class InputText : MonoBehaviour {
 	void Start(){
 		GetComponentInChildren<Text> ().text = " ";
 		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 	}
 
 	void Update(){
@@ -28,7 +29,7 @@ public class InputText : MonoBehaviour {
 	}
 
 	public void validadeInputText(){
-		if(GetComponentInChildren<Text> ().text.Equals(" 311")){
+		if(GetComponentInChildren<Text> ().text.Equals(" 322")){
 			GlobalVariables.isSafeBoxOpen = true;
 			if (OnClicked != null)
 				OnClicked ();

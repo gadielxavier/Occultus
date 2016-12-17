@@ -39,7 +39,7 @@ public class safeBox : MonoBehaviour {
 
 	void OnMouseExit(){
 		looking = false;
-		transform.FindChild("front door").GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+		transform.Find("front door").GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
 	}
 
 }
