@@ -50,6 +50,7 @@
      <Compile Include="Assets\_Scripts\GlobalVariables.cs" />
      <Compile Include="Assets\_Scripts\HighLightObject.cs" />
      <Compile Include="Assets\_Scripts\InputText.cs" />
+     <Compile Include="Assets\_Scripts\KillSelf.cs" />
      <Compile Include="Assets\_Scripts\Pause.cs" />
      <Compile Include="Assets\_Scripts\camMouseLook.cs" />
      <Compile Include="Assets\_Scripts\playerController.cs" />

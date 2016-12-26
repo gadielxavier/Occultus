@@ -15,7 +15,7 @@ public class InputText : MonoBehaviour {
 	}
 
 	void Update(){
-		if(Input.GetMouseButtonDown(1)){
+		if(Input.GetKeyDown(KeyCode.Escape)){
 			SceneManager.LoadScene ("house");
 		}
 	}
@@ -33,6 +33,7 @@ public class InputText : MonoBehaviour {
 			GlobalVariables.isSafeBoxOpen = true;
 			if (OnClicked != null)
 				OnClicked ();
+			SceneManager.LoadScene ("house");
 		}
 	}
 }

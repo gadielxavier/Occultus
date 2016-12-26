@@ -17,18 +17,6 @@ public class playerController : MonoBehaviour {
 		float straffle = Input.GetAxis ("Horizontal") * speed;
 		translation *= Time.deltaTime;
 		straffle *= Time.deltaTime;
-
 		transform.Translate (straffle, 0, translation);
-
-		if (Input.GetKeyDown (KeyCode.Escape)){
-			switch(Cursor.visible){
-				case true:
-					Cursor.visible = false;
-					break;
-			case false:
-				Cursor.visible = true;
-				break;
-			}
-		}
 	}
 }
