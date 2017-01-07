@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/HighLightObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/piano.cs">
     <Files>
-      <File FileName="Assets/_Scripts/HighLightObject.cs" Line="20" Column="5" />
-      <File FileName="Assets/_Scripts/Pause.cs" Line="21" Column="4" />
+      <File FileName="Assets/_Scripts/piano.cs" Line="37" Column="28" />
+      <File FileName="Assets/_Scripts/Drawer.cs" Line="26" Column="3" />
+      <File FileName="Assets/_Scripts/safeBox.cs" Line="13" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class InputText : MonoBehaviour {
 
-	public delegate void ClickAction();
-	public static event ClickAction OnClicked;
+	//public delegate void ClickAction();
+	//public static event ClickAction OnClicked;
 
 	void Start(){
 		GetComponentInChildren<Text> ().text = " ";
@@ -31,8 +31,8 @@ public class InputText : MonoBehaviour {
 	public void validadeInputText(){
 		if(GetComponentInChildren<Text> ().text.Equals(" 322")){
 			GlobalVariables.isSafeBoxOpen = true;
-			if (OnClicked != null)
-				OnClicked ();
+			//if (OnClicked != null)
+			//	OnClicked ();
 			SceneManager.LoadScene ("house");
 		}
 	}
