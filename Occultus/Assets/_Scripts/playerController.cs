@@ -9,7 +9,6 @@ public class playerController : MonoBehaviour {
 		//turn off curso
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
-		transform.position = GlobalVariables.playerPosition;
 	}
 	
 	void Update () {

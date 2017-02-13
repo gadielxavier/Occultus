@@ -4,42 +4,31 @@ using UnityEngine.SceneManagement;
 
 public class safeBox : MonoBehaviour {
 
-	private bool looking;
 	Animator animator;
 	int Open = Animator.StringToHash("Open");
+	public Transform book;
 
 	void Start(){
 		animator = GetComponent<Animator> ();
-		if(GlobalVariables.isSafeBoxOpen){
-			animator.SetTrigger (Open);
-		}
+		book.gameObject.SetActive (false);
 	}
 		
-	void OnTriggerStay(Collider col){
-		if(col.gameObject.tag == "Player"){
-			if(looking){
-				transform.Find("front door").GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Specular");
-				if(Input.GetMouseButtonDown(0)){
-					GlobalVariables.playerPosition = GameObject.Find ("Player").transform.position;
-					GlobalVariables.cameraRotation = GameObject.Find ("Main Camera").transform.rotation.eulerAngles;
-					SceneManager.LoadScene ("safebox");
-				}	
-			}
-		}
+	void OnEnable()
+	{
+		InputText.safeBoxEvent += openSafeBox;
 	}
 
-	void OnTriggerExit(Collider col){
-		looking = false;
-		transform.Find("front door").GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
-	}
-		
-	void OnMouseOver(){
-		looking = true;
+
+	void OnDisable()
+	{
+		InputText.safeBoxEvent -= openSafeBox;
 	}
 
-	void OnMouseExit(){
-		looking = false;
-		transform.Find("front door").GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+
+	void openSafeBox()
+	{
+		animator.SetTrigger (Open);
+		book.gameObject.SetActive (true);
 	}
 
 }

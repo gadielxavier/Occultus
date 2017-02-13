@@ -5,19 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class InputText : MonoBehaviour {
 
-	//public delegate void ClickAction();
-	//public static event ClickAction OnClicked;
+	public delegate void ClickAction();
+	public static event ClickAction safeBoxEvent;
 
 	void Start(){
 		GetComponentInChildren<Text> ().text = " ";
-		Cursor.lockState = CursorLockMode.None;
-		Cursor.visible = true;
-	}
-
-	void Update(){
-		if(Input.GetKeyDown(KeyCode.Escape)){
-			SceneManager.LoadScene ("house");
-		}
 	}
 
 	public void setInputText(string value){
@@ -29,11 +21,11 @@ public class InputText : MonoBehaviour {
 	}
 
 	public void validadeInputText(){
+		Debug.Log (GetComponentInChildren<Text> ().text.Equals(" 322"));
 		if(GetComponentInChildren<Text> ().text.Equals(" 322")){
-			GlobalVariables.isSafeBoxOpen = true;
-			//if (OnClicked != null)
-			//	OnClicked ();
-			SceneManager.LoadScene ("house");
+			if (safeBoxEvent != null) {
+				safeBoxEvent ();
+			}
 		}
 	}
 }
