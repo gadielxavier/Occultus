@@ -11,6 +11,19 @@ public class Pause : MonoBehaviour {
 		}	
 	}
 
+	void OnEnable()
+	{
+		piano.OnClicked += pauseGame;
+		InputText.safeBoxEvent += pauseGame;
+	}
+
+
+	void OnDisable()
+	{
+		piano.OnClicked -= pauseGame;
+		InputText.safeBoxEvent -= pauseGame;
+	}
+
 	void pauseGame(){
 		if(GlobalVariables.isPaused == false){
 			Time.timeScale = 0;

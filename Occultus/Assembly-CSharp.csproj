@@ -46,9 +46,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Downloads\Keypad\Script\Playsound.cs" />
+     <Compile Include="Assets\_Scripts\ControleConfiguration.cs" />
      <Compile Include="Assets\_Scripts\Door.cs" />
      <Compile Include="Assets\_Scripts\Drawer.cs" />
      <Compile Include="Assets\_Scripts\GlobalVariables.cs" />
+     <Compile Include="Assets\_Scripts\HighLightObejectWhenCollided.cs" />
      <Compile Include="Assets\_Scripts\HighLightObject.cs" />
      <Compile Include="Assets\_Scripts\InputText.cs" />
      <Compile Include="Assets\_Scripts\Intro.cs" />

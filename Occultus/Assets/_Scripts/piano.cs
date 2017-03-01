@@ -39,6 +39,7 @@ public class piano : MonoBehaviour {
 		if(validatePianoArray()){
 			if (OnClicked != null)
 				OnClicked ();
+			Destroy (this.gameObject);
 		}
 	}
 

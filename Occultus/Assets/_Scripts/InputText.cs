@@ -26,6 +26,7 @@ public class InputText : MonoBehaviour {
 			if (safeBoxEvent != null) {
 				safeBoxEvent ();
 			}
+			Destroy (transform.parent.gameObject);
 		}
 	}
 }

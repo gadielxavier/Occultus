@@ -5,9 +5,11 @@ public class Drawer : MonoBehaviour {
 
 	Animator animator;
 	int drawerTrigger = Animator.StringToHash("drawerTrigger");
+	AudioSource audio;
 
 	void Start () {
 		animator = GetComponent<Animator> ();
+		audio = GetComponent<AudioSource> ();
 	}
 	
 	void OnEnable()
@@ -25,5 +27,6 @@ public class Drawer : MonoBehaviour {
 	void openSecretDoor()
 	{
 		animator.SetTrigger (drawerTrigger);
+		audio.Play ();
 	}
 }
