@@ -1,0 +1,71 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ControleConfiguration">
+			<method name="loadHouseScene"/>
+		</type>
+		<type fullname="ShowButtonWhenPressed">
+			<method name="clickEvent"/>
+		</type>
+		<type fullname="Playsound">
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+			<method name="Clicky"/>
+		</type>
+		<type fullname="piano">
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="setPianoArray"/>
+			<method name="openSecretDoor"/>
+			<method name="setPianoArray"/>
+		</type>
+		<type fullname="InputText">
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="validadeInputText"/>
+			<method name="deleteInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+			<method name="setInputText"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>
